@@ -7,8 +7,8 @@ pipeline {
       steps {
         sh '''
         sudo rm -rf /var/lib/jenkins/workspace/freesia
-        sudo git clone https://github.com/coldpaper1/fressia.git
-        cd fressia
+        sudo git clone https://github.com/coldpaper1/freesia.git
+        
 
         
        
