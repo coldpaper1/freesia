@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>자기 소개</title>
+	<link rel="stylesheet" type="text/css" href="mportpolio.css"/>
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+
+</head>
+
+<style type="text/css">
+  
+
+	/* text - animation  */
+	p {
+		color: white;
+	}
+
+ div {
+  animation-duration: 2s;
+  animation-name: slidein;
+ }
+ 
+ @keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+ 
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+ }
+
+body {
+	background-image: url('arcatom.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+#home {
+	background-image: url('IRON.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+
+</style>
+
+<body style="background-color: #000000">
+<div data-theme="b">
+	<div data-role="page" id="home" style="background-color: #000000">
+		
+		<div data-role="header" data-theme="b" ><!--data-theme ="b" 테마 색 지정의  -->
+			<a href="Main2.html" data-icon="back" rel="external">Back</a>
+        <h3>박선재님의 페이지 </h3>
+		</div>
+		<hr>
+
+		<div data-role="header" style="text-align:center"  data-theme="c">
+			<!-- <img  id="iron" src="아이언맨.jpg" width="350" height="200" > -->
+			
+			<ul  data-role="listview" data-inset="true">
+				<a href="mintro.html"  rel="external" data-role="button" data-icon="info" data-inline="true" class="but"style="border: 2px solid white;" class="ui-btn-active">박선재</a>
+				<a href="mininfo.html" rel="external" data-role="button" data-icon="bullets" data-inline="true" class="but"style="border: 2px solid white;">이종찬</a>
+				<a href="mstudy.html"  rel="external" data-role="button" data-icon="comment" data-inline="true" class="but"style="border: 2px solid white;">조성연</a>
+				<a href="mcarrer.html" rel="external" data-role="button" data-icon="edit" data-inline="true" class="but"style="border: 2px solid white;">한찬희</a>
+		
+			</ul>
+		</div>
+	<hr>
+		 <div data-role = "content">
+             <section class="section1"> 
+       
+             <!-- <img id="stu-pic" src="Sunjae.jpg"/> -->
+   
+   <h2><p>1분 자기소개</p></h2>
+
+   <p>저는 전국 대학생을 대상으로 개최된 해커톤 대회에 참여하여 입상한 경험이있습니다. 당시 팀원들과 소통하며 지식을 공유하는 소중한 경험을 했습니다. 개발 성과물에 대한 운영 및 관리를 고민하면서 클라우드에 대한 관심을 갖게 되었고, 졸업 후 “클라우드 자동화 기반 애플리케이션 개발 및 관리자 양성과정”에 참여하여 리눅스, 가상화, 컨테이너, 자동화, 퍼플릭 클라우드 등의 지식을 습득했습니다. 특히 aws, DevOps, CI/CD, IaC, 네트워크 등에 큰 흥미를 가지게 되었으며, 팀프로젝트를 통해 클라우드 기반의 앱을 제작, 배포 및 운영해보는 경험을 했습니다. 끝으로 저는 주변 사람들과 소통하고, 편안하게 해주는 장점이 있습니다. 제가 교보정보통신에 입사하게 된다면 동료 및 선후배님들과 원만하게 소통하고, 클라우드 컴퓨팅의 핵심 전문가가 되기 위해 노력하는 인재가 되겠습니다.</p>
+
+
+		<div data-role="footer" data-position="fixed" data-theme="b" ><hr>
+      		<div data-role="navbar">
+                <ul>
+                    <li><a href="tel:01071263843" rel="external" data-icon="phone" >Phone</a></li>
+
+                    <li><a href="mailto:qkrtjswo03@naver.com" data-icon="mail">E-mail</a></li>
+                </ul>
+            </div>
+      <h3>Copyright © 2019 PARK, SUNJAE</h3>
+    </div>
+	</div>
+
+       
+</div>
+
+</body>
+</html>

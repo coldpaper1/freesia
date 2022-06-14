@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="src/jquery.mobile-1.4.5.min.css"/>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+</head>
+<style type="text/css">
+p , li {
+    color: white;
+  }
+
+  /* Sqeuare animation  */
+html, body {
+    overflow: hidden;  /* 내용이 넘칠때 자를 지 말지 정함. */
+    height: 90%;
+    background-color: #000000;
+}
+
+body {
+  background-color: #000000;
+  perspective: 500px;   /* 원근감 설정 값이 작을 수록 깊어짐. */
+  perspective-origin: 50% 50%;   /* 원점의 위치를 지정 */
+}
+
+.wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: 1px dashed rgba(255, 255, 255, 0.5);
+  transform-style: preserve-3d;      /* 3D 공간에 배치 */
+  animation: turn 5s linear infinite;   /* linear (일정하게), infinite (무한) */
+}
+
+.square {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 36px;
+  line-height: 98px;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+.square:nth-child(1) {  /* nth-child()는 형제 요소 중에서 특정 순서에 있는 요소를 선택할 때 사용. */
+  transform: rotateY(0deg) translateZ(50px); /*  rotateY(각도) : Y축으로 각도 만큼 회전 함 */ 
+}                                                /* rotateX(각도) : X축으로 각도 만큼 회전 함 */ 
+
+.square:nth-child(2) {
+  transform: rotateY(180deg) translateZ(50px);
+}
+
+.square:nth-child(3) {
+  transform: rotateY(-90deg) translateZ(50px);
+}
+
+.square:nth-child(4) {
+  transform: rotateY(90deg) translateZ(50px);
+}
+
+.square:nth-child(5) {
+  transform: rotateX(90deg) translateZ(50px);
+}
+
+.square:nth-child(6) {
+  transform: rotateX(-90deg) translateZ(50px);
+}
+
+@keyframes turn {   /* keyframes 모양의 변화를 정하는 속성 */
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+/* text - animation  */
+ h3, ul, a {
+  animation-duration: 3.5s;
+  animation-name: slidein;
+  /* animation-iteration-count: infinite;
+  animation-direction: alternate; */
+}
+
+
+@keyframes slidein {       /* keyframes 모양의 변화를 정하는 속성 */
+  
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* body {
+  background-image: url('IRON.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+</style>
+<body>
+
+<div data-role="page" id="page1" style="background-color: black">
+    <div data-role="header" data-add-back-btn="true"  data-fullscreen="false" data-position="fixed" data-theme="b" >
+       <hr>
+      <h3>SunJae Page</h3>
+       <hr>
+    </div>
+
+<div data-role="content"  data-position="fixed" >
+    <center>
+   
+       <h3><p>HELLO SUNJAE</p></h2>  
+       <div data-role="content" style="text-align:center"  style="border: 1.5px solid skyblue;">
+      <ul data-role="listview" data-inset="true" >
+       
+        
+      </ul>
+      </div>
+<h2>
+  <div class="wrap">
+  <div class="square"> <a href="Loding.html" rel="external" style="text-decoration: none; color: white;"><img src="nightroad.jpg" width="95" height="95" ></a></div>
+  <div class="square"><a href="Loding.html" rel="external" style="text-decoration: none; color: white;" ><img src="ironman2.jpg" width="95" height="95" ></a></div>
+  <div class="square"><a href="Loding.html" rel="external" style="text-decoration: none; color: white;" ><img src="ironman2.jpg" width="95" height="95" ></a></div>
+  <div class="square"><a href="Loding.html" rel="external" style="text-decoration: none; color: white;" ><img src="nightroad.jpg" width="95" height="95" ></a></div>
+  <div class="square"><a href="Loding.html" rel="external" style="text-decoration: none; color: white;" ><img src="ironman2.jpg" width="95" height="95" ></a></div>
+  <div class="square"><a href="Loding.html" rel="external" style="text-decoration: none; color: white;" ><img src="ironman2.jpg" width="95" height="95" ></a></div>
+   </div>
+</h2>
+</div>
+    <div data-role="footer" data-position="fixed" data-theme="b">
+      <hr>
+      <div data-role="navbar">
+      <ul>
+          <li><a href="tel:01071263843" rel="external" data-icon="phone" >Phone</a></li>
+          <li><a href="mailto:qkrtjswo03@naver.com" data-icon="mail">E-mail</a></li> 
+      </ul>
+      </div>
+      
+      <h3>Copyright © 2022 PARK, SUNJAE</h3>
+    </div>
+   </div>
+ 
+
+</body>
+</html>

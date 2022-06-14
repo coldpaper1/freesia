@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" type="text/css" href="mportpolio.css"/> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<link rel="stylesheet" href="./social-media-icons.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+  
+</head>
+
+<style type="text/css">
+	/* text - animation  */
+ div {
+  animation-duration: 2s;
+  animation-name: slidein;
+ }
+ 
+ @keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+ 
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+ }
+
+body {
+	background-image: url('arcatom.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+ #home {
+	background-image: url('IRON.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+
+body{
+    background: #d8d8d8;
+}
+
+.social-menu ul{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.social-menu ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #0077b5;
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: #000;
+}
+</style>
+
+<body style="background-color: #000000">
+<div data-theme="b">
+	<div data-role="page" id="home" style="background-color: #000000">	
+
+		<div data-role="header" data-theme="b" ><!--data-theme ="b" 테마 색 지정의  -->
+			<a href="Main.html" data-icon="home" rel="external">Main</a>
+        <h3>SunJae Page</h3>
+		</div>
+<hr>
+		<div data-role="header" style="text-align:center"  data-theme="c">
+			<!-- <img  id="iron" src="아이언맨.jpg" width="350" height="200" > -->
+			<ul  data-role="listview" data-inset="true">
+				<a href="mintro.html" rel="external" data-role="button" data-icon="info" data-inline="true" class="but"style="border: 2px solid white;">박선재</a>
+				<a href="mininfo.html" rel="external" data-role="button" data-icon="bullets" data-inline="true" class="but"style="border: 2px solid white;">이종찬</a>
+				<a href="mstudy.html" rel="external" data-role="button" data-icon="comment" data-inline="true" class="but"style="border: 2px solid white;">조성연</a>
+				<a href="mcarrer.html" rel="external" data-role="button" data-icon="edit" data-inline="true" class="but"style="border: 2px solid white;">한찬희</a>
+		  </ul>
+		</div>
+	
+		  <div class="social-menu" data-role="body" data-position="fixed" data-theme="b">
+       	<ul>
+            <li><a href="https://github.com/" target="blank"><i class="fab fa-github"></i></i></a></li>
+            <li><a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/sanket-bodake-995b5b205/" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://codepen.io/"><i class="fab fa-codepen" target="blank"></i></a></li>
+      	  </ul>
+   		 </div>
+	<hr>
+		<div data-role="footer" data-position="fixed" data-theme="b" >
+			<hr>
+      <div data-role="navbar">
+            <ul>
+         		 <li><a href="tel:01071263843" rel="external" data-icon="phone" >Phone</a></li>
+	           <li><a href="mailto:qkrtjswo03@naver.com" data-icon="mail">E-mail</a></li>
+            </ul>
+          </div>
+      <h3>Copyright © 2022 PARK, SUNJAE</h3>
+    </div>
+  </div>
+</div>
+
+ 
+
+</body>
+</html>
