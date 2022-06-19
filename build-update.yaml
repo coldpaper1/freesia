@@ -8,7 +8,7 @@
   - name:  file-delivery
     become: yes
     copy:
-      src: /var/lib/jenkins/workspace/freesia/
+      src: /var/lib/jenkins/workspace/freesias/freesia
       dest: /root/p2/dockerfiles/
 
         
