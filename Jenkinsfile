@@ -8,7 +8,7 @@ pipeline {
         sh '''
         #sudo rm -rf /var/lib/jenkins/workspace/freesias
         sudo git clone https://github.com/coldpaper1/fressia.git
-        cd freesias
+        sudo cd freesias
 
         sudo chmod 777 build-update.yaml
         '''
