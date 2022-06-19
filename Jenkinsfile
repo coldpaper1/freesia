@@ -6,7 +6,7 @@ pipeline {
     stage('git clone!!!! ') {
       steps {
         sh '''
-        sudo rm -rf /root/var/lib/jenkins/workspace/freesias/freesia
+        sudo rm -rf /var/lib/jenkins/workspace/freesias/freesia
         sudo git clone https://github.com/coldpaper1/fressia.git
         cd freesia
 
