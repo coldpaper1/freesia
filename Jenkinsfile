@@ -6,11 +6,12 @@ pipeline {
     stage('git clone!!!! ') {
       steps {
         sh '''
-        sudo rm -rf /var/lib/jenkins/workspace/freesias/project1
-        sudo git clone https://github.com/coldpaper1/project1.git
-        cd project1
+        sudo rm -rf /root/var/lib/jenkins/workspace/freesias/freesia
+        sudo git clone https://github.com/coldpaper1/fressia.git
+        cd freesia
 
-        sudo chmod 777 imagebuild.yaml
+
+        sudo chmod 777 build-update.yaml
         '''
       }
     }
@@ -18,7 +19,7 @@ pipeline {
       steps {
         sh '''
 
-        sudo ansible-playbook imagebuild.yaml
+        sudo ansible-playbook build-update.yaml
 
         '''
       }
