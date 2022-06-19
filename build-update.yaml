@@ -9,7 +9,7 @@
     become: yes
     copy:
       src: /var/lib/jenkins/workspace/freesias/freesia
-      dest: /root/p2/dockerfiles/
+      dest: /root/freesia/dockerfiles/
 
         
 
